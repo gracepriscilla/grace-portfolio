@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Grace Priscilla's Portfolio</h1>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Skills">Skills</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="Home">
+        <div class="left">
+            <p>Hi, I am</p>
+            <span>Grace Priscilla</span>
+            <p>and I am passionate</p>
+            <h3 id="element">Web Developer.</h3>
+        </div>
+
+        <div class="right">
+            <img src="grace.jpg" alt="Grace Priscilla">
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="Projects">
+        <h2><u>Projects:</u></h2>
+
+        <div class="projects">
+            <ul>
+                <li>Name: Portfolio</li>
+                <li>Skills: HTML, CSS</li>
+                <li>Website Design</li>
+            </ul>
+
+            <ul>
+                <li>Name: Password Generator</li>
+                <li>Skills: Java</li>
+                <li>Password Generation</li>
+            </ul>
+
+            <ul>
+                <li>Name: Python Programs</li>
+                <li>Skills: Python</li>
+                <li>Basic Applications</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Skills">
+        <h2><u>Skills:</u></h2>
+        <p>HTML | CSS | Tailwind CSS | Java | Python | GitHub</p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Grace Priscilla</p>
+</footer>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    new Typed('#element', {
+        strings: ['Web Developer.', 'Java Developer.', 'Python Programmer.'],
+        typeSpeed: 50,
+        loop: true
+    });
+</script>
+
+</body>
+</html>

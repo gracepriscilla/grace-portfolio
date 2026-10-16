@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    background: pink;
+    color: black;
+    padding: 25px 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Home */
+#Home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    min-height: 250px;
+}
+
+.left {
+    width: 50%;
+    line-height: 1.7;
+}
+
+.left span {
+    color: rgb(185, 100, 165);
+    font-size: 25px;
+}
+
+.right img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* Projects */
+#Projects {
+    padding: 25px;
+}
+
+h2 {
+    color: #852b78;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    background:pink;
+    color: black;
+    padding: 20px;
+}
+
+.projects ul {
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+/* Skills */
+#Skills {
+    padding: 30px;
+    text-align: center;
+    background: #f5f5fa;
+    line-height: 2;
+}
+
+footer {
+    background:pink;
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    #Home {
+        gap: 10px;
+        padding: 20px 10px;
+    }
+
+    .left {
+        font-size: 14px;
+    }
+
+    .left span {
+        font-size: 19px;
+    }
+
+    .right img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+}
